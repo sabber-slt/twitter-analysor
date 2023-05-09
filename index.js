@@ -3,6 +3,8 @@ import pupeteer from "puppeteer";
 import { Configuration, OpenAIApi } from "openai";
 import bodyParser from "body-parser";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config()
 
 const configuration = new Configuration({
   apiKey: `${process.env.OPENAI_API_KEY}`,
