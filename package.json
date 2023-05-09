@@ -1,0 +1,28 @@
+{
+  "name": "twitter-chatgpt-bot",
+  "version": "1.0.0",
+  "description": "A twitter bot that reads the tweets of a given username and analyzes the user's personality using artificial intelligence.",
+  "homepage": "https://github.com/sabber-slt/twitter-analysor",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sabber-slt/twitter-analysor"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^3.3.1",
+    "openai": "^3.2.1",
+    "puppeteer": "^19.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
