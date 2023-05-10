@@ -29,8 +29,11 @@ cd twitter-analysor/python
         `uvicorn main:app`
 
 ## Comparison
-| Feature            | NodeJs version             | Python version                         |   |   |
-|--------------------|----------------------------|----------------------------------------|---|---|
-| Speed              | Excellent                  | Good                                   |   |   |
-| Prompt description | -                          | Carl Jung's psychology Analysis method |   |   |
-| Input              | Every text in profile page | Just tweets                            |   |   |
+## Comparison
+| Feature            | NodeJs version             | Python version                         |
+|--------------------|----------------------------|----------------------------------------|
+| Speed              | Excellent                  | Good                                   |
+| Prompt description | -                          | Carl Jung's psychology Analysis method |
+| Input              | Every text in profile page | Just tweets                            |
+| Driver             | Pupeteer                   | Selenium                               |
+| Browserr           | Chromium                   | Chrome                                 |
