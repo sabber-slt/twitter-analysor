@@ -28,7 +28,7 @@ cd twitter-analysor/python
 
         `uvicorn main:app`
 
-## Comparison
+
 ## Comparison
 | Feature            | NodeJs version             | Python version                         |
 |--------------------|----------------------------|----------------------------------------|
