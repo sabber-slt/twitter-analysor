@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.com/chrisvxd/puppeteer-social-image.svg?branch=master)](https://travis-ci.com/chrisvxd/puppeteer-social-image) [![NPM](https://img.shields.io/npm/v/puppeteer-social-image.svg)](https://www.npmjs.com/package/puppeteer-social-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
-Create a bot that reads the tweets of a given username and analyzes the user's personality using artificial intelligence..
+This analyzer robot is written in Python and JavaScript separately. It utilizes Selenium for Python and Puppeteer for JavaScript.
+The functionality of this robot is as follows: it retrieves the Twitter username from the user and navigates to their page. Here, you have the option to determine the scrolling depth of the page. The greater the scrolling depth, the longer the analysis process will take. It can even read all of the user's tweets.
+After extracting the data, it filters the text and analyzes it using the parameters we have set for ChatGPT in order to determine the user's personality.
 
 ## Installation
 
