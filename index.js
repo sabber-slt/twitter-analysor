@@ -29,6 +29,8 @@ app.post("/twitter", async (req, res) => {
     defaultViewport: null,
     // this is required for linux server
     executablePath: "/usr/bin/chromium-browser",
+    // for MacOS with M1 chip: chromium does not work, use google chrome instead. Active this line
+    // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     args: ["--no-sandbox"],
   });
   const page = await browser.newPage();
