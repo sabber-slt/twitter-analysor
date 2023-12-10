@@ -1,12 +1,18 @@
 # Twitter Chatgpt Analysor
 
-[![Build Status](https://travis-ci.com/chrisvxd/puppeteer-social-image.svg?branch=master)](https://travis-ci.com/chrisvxd/puppeteer-social-image) [![NPM](https://img.shields.io/npm/v/puppeteer-social-image.svg)](https://www.npmjs.com/package/puppeteer-social-image)
-
 This analyzer bot is written in Python and JavaScript separately. It utilizes Selenium for Python and Puppeteer for JavaScript.
 The functionality of this robot is as follows: it retrieves the Twitter username from the user and navigates to their page. Here, you have the option to determine the scrolling depth of the page. The greater the scrolling depth, the longer the analysis process will take. It can even read all of the user's tweets.
 After extracting the data, it filters the text and analyzes it using the parameters we have set for ChatGPT in order to determine the user's personality.
 
+## Features
+
+- Fetch and process user data from Nitter.
+- Clean and format the fetched text.
+- Integrate with OpenAI's GPT-3.5-turbo model for advanced text processing.
+
 ## Installation
+
+In order to use it, you must first acquire an API key from the OpenAI website. OpenAI API
 
 ```sh
 git clone https://github.com/sabber-slt/twitter-analysor
@@ -14,32 +20,11 @@ cd twitter-analysor
 yarn
 ```
 
-## Usage
+## Enviroment variables
 
-### Put your openai api key in .env file and Write your appropriate promt
-
-```js
-const response = await openai.createChatCompletion({
-  model: "gpt-3.5-turbo",
-  messages: [
-    {
-      role: "user",
-      // write your prompt here
-      content: ` : \n ${text}`,
-    },
-  ],
-  max_tokens: MAX_RESPONSE_TOKENS,
-});
+```sh
+PORT=[Your preferred port]
+OPENAI_API_KEY=[Your OpenAI API key]
+OPENAI_URL=[OpenAI API URL]
+NITTER_FILTER=[Your Nitter filter settings]
 ```
-
-### You can change the scroll amount to any desired number
-
-```js
-await page.evaluate(() => {
-  window.scrollBy(0, 1000);
-});
-```
-
-## API
-
-### u can get openai api key from here <https://platform.openai.com/account/api-keys>
